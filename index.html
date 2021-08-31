@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Quiz App | Mostafa Kadry</title>
+
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link
+      rel="stylesheet"
+      href="node_modules/bootstrap/dist/css/bootstrap.css"
+    />
+    <meta charset="utf-8" />
+  </head>
+  <body class="bg-dark">
+    <!-- Starting Page -->
+    <div class="settings bg-light">
+      <h2>Start Quez</h2>
+      <div
+        class="alert alert-danger alert-dismissible wrong-alert"
+        role="alert"
+        id="liveAlert"
+      >
+        <strong>wrong!</strong> Check that all inputs are filled.
+        <span class="btn-close close-wraning"></span>
+      </div>
+      <!-- Selecting category -->
+      <div class="row category-container">
+        <div class="col-12">
+          <label for="category">Select Category</label>
+        </div>
+        <div class="col-12 text-center category-selection-options">
+          <select name="" id="category" class="">
+            <option value="9">General Knowledge</option>
+            <option value="18">Science: Computers</option>
+            <option value="19">Science: Math</option>
+            <option value="17">Science & Nature</option>
+            <option value="27">Aminals</option>
+            <option value="23">History</option>
+            <option value="21">Sports</option>
+          </select>
+        </div>
+      </div>
+
+      <!-- selecting Diificulty -->
+      <div class="row difficulty-container">
+        <div class="col-12">
+          <label for="difficulty">Select Difficulty </label>
+        </div>
+        <div class="col-12 diffeculty-radio">
+          <div class="">
+            <label for="easy">
+              <input type="radio" id="easy" name="difficulty" value="easy" />
+              easy
+            </label>
+            <label for="medium">
+              <input
+                type="radio"
+                id="medium"
+                name="difficulty"
+                value="medium"
+              />
+              medium
+            </label>
+            <label for="hard">
+              <input type="radio" id="hard" name="difficulty" value="hard" />
+              hard
+            </label>
+          </div>
+        </div>
+      </div>
+      <!-- selecting no question -->
+      <div class="row nquestions-contaier">
+        <div class="col-12">
+          <label for="nquestions">No. Questions</label>
+        </div>
+        <div class="col-12 text-center">
+          <input type="text" id="nquestions" class="q-n-input" />
+        </div>
+      </div>
+      <button type="submit" id="start" class="btn-outline-primary">
+        Start Quiz
+      </button>
+    </div>
+    <!-- End of Starting Page -->
+
+    <!--Start Quiz page -->
+    <div class="quiz bg-light" style="display: none">
+      <span><h1>Quiz</h1></span>
+
+      <div class="count">
+        <p>Answered Questions: <span class="current"> 0</span></p>
+        <p>Total Questions: <span class="total"></span></p>
+      </div>
+      <h2 id="qh2">Questions</h2>
+      <div class="all-answers" id="all-answers"></div>
+
+      <button id="next" class="btn-outline-primary">Next Question</button>
+    </div>
+    <!-- End Quiz Page -->
+
+    <!-- Start Final results -->
+    <div class="final bg-light" style="display: none">
+      <h2 class="alert alert-secondary" role="alert">
+        Thank You for taking this Task!
+      </h2>
+      <h2></h2>
+      <div class="alert alert-info score" role="alert" id="score"></div>
+      <h4 id="review-my-answers-btn" class="btn-info">Review my answers</h4>
+      <h4 id="try-again" class="btn-info">Try Again? click here</h4>
+    </div>
+    <!-- End Final Results -->
+
+    <script type="module" src="main.js"></script>
+    <script src="assets/js/popper.min.js"></script>
+    <script src="assets/js/jquery-3.6.0.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
+  </body>
+</html>

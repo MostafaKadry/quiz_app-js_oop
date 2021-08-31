@@ -1,0 +1,101 @@
+.settings {
+  width: 97%;
+  margin: auto;
+  border: 2px solid #494848;
+  padding: 1rem;
+  font-size: 2rem;
+}
+.settings .wrong-alert {
+  display: none;
+}
+.settings h2 {
+  border-bottom: 3px solid black;
+  width: 40%;
+  margin: 0 auto 3rem auto;
+  padding-bottom: 1rem;
+  text-align: center;
+  font-size: 2.5rem;
+}
+.settings .category-container {
+  margin: 1rem 0;
+}
+.settings .category-container .category-selection-options select {
+  padding: 1px 2px;
+  margin: 2px;
+  width: 95%;
+}
+.settings .difficulty-container {
+  margin: 1rem 0;
+}
+.settings .diffeculty-radio {
+  border: 1px solid black;
+  text-align: center;
+  padding: 1px 2px;
+  margin: auto;
+  width: 93%;
+}
+.settings .diffeculty-radio label {
+  margin: 0.35rem 3rem;
+}
+.settings input[type=radio] {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+.settings .nquestions-contaier {
+  margin: 1rem 0;
+}
+.settings .nquestions-contaier .q-n-input {
+  width: 95%;
+}
+.settings button {
+  margin: 3rem auto 1rem auto !important;
+  width: 70%;
+  display: block;
+}
+
+/**Quiz Page */
+.quiz {
+  padding: 1.5rem;
+  font-size: 2rem;
+}
+.quiz span h1 {
+  text-align: center;
+  font-size: 2.5rem;
+}
+.quiz .count p {
+  width: 45%;
+  display: inline-block;
+}
+.quiz button {
+  margin: 3rem auto 1rem auto !important;
+  width: 70%;
+  display: block;
+}
+
+.final {
+  padding: 1.5rem;
+  font-size: 2rem;
+  height: 30rem;
+}
+.final h2 {
+  font-size: 2.5rem;
+}
+.final #review-my-answers-btn {
+  cursor: pointer;
+  display: inline-block;
+  padding: 0.75rem;
+  margin: 0.74rem;
+}
+.final #try-again {
+  cursor: pointer;
+  display: inline-block;
+  padding: 0.75rem;
+  margin: 0.74rem;
+}
+
+input[type=radio] {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+/*# sourceMappingURL=style.css.map */
